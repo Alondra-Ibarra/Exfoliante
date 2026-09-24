@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Exfoliante de Café | Cuidado Sostenible</title>
+    <!-- Importando Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configurando colores personalizados en Tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cafe: {
+                            100: '#F5E6D3', /* Beige muy claro */
+                            200: '#E6CBA8',
+                            300: '#D4A373', /* Tono caramelo */
+                            500: '#A67C52', /* Café con leche */
+                            700: '#5E412F', /* Café tostado */
+                            900: '#3E2723', /* Café oscuro (grano) */
+                        },
+                        beige: {
+                            50: '#FAFAF5',
+                            100: '#F5F5DC', /* Beige clásico */
+                            200: '#E8E8D0',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Importando fuentes de Google (Playfair para títulos elegantes, Inter para lectura) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        /* Efecto sutil para las imágenes al pasar el cursor */
+        .hover-zoom:hover {
+            transform: scale(1.02);
+            transition: transform 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-beige-50 text-cafe-900 antialiased selection:bg-cafe-300 selection:text-cafe-900">
+
+    <!-- Navbar simple y elegante -->
+    <nav class="bg-beige-50/90 backdrop-blur-md fixed w-full z-50 top-0 border-b border-cafe-200/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center md:justify-between items-center h-24">
+                <div class="flex-shrink-0 flex items-center">
+                    <!-- Logo / Nombre de marca -->
+                    <span class="font-serif font-bold text-3xl tracking-wide text-cafe-900">YOLIA</span>
+                </div>
+                <div class="hidden md:block">
+                   <!-- </div><span class="text-cafe-500 font-medium tracking-widest text-sm uppercase">Cuidado Natural Sostenible</span>-->
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 sm:pt-40 sm:pb-24 lg:pb-32 overflow-hidden bg-beige-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-16 items-center">
+                
+                <!-- Texto Persuasivo (Hero) -->
+                <div class="mt-10 lg:mt-0 lg:col-span-6 text-center lg:text-left">
+                    <div class="inline-flex items-center px-4 py-2 rounded-full bg-cafe-100 text-cafe-700 font-medium text-sm mb-6 border border-cafe-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+                        Nueva Fórmula Zero Waste
+                    </div>
+                    <h1 class="text-5xl sm:text-6xl font-bold text-cafe-900 mb-6 leading-tight">
+                        Despierta tu piel con el <span class="text-cafe-500 italic">poder natural</span> del café.
+                    </h1>
+                    <p class="text-xl text-cafe-700/80 mb-10 leading-relaxed font-light">
+                        Nuestra barra exfoliante sólida transforma los residuos de café en tu mejor aliado de belleza. Exfoliación profunda, hidratación intensa y cero plástico. Un ritual que tu piel y el planeta agradecerán.
+                    </p>
+                </div>
+                
+                <!-- Imagen del Producto (Hero) -->
+                <div class="mt-16 lg:mt-0 lg:col-span-6">
+                    <div class="relative rounded-[2rem] p-3 bg-cafe-100/50 shadow-2xl shadow-cafe-900/10">
+                        <img src="https://i.etsystatic.com/17461735/r/il/878fcf/1472537866/il_570xN.1472537866_trrl.jpg" alt="Barra Exfoliante de Café" class="w-full h-auto rounded-[1.5rem] shadow-inner hover-zoom">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Zig-Zag 1: Cuidado de la piel -->
+    <section class="py-24 bg-beige-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <!-- Imagen Izquierda -->
+                <div class="order-2 lg:order-1 mt-12 lg:mt-0 relative">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhrj12Bnc5M8XI3UU-UmE2tVVT0NzXLszgBmZKS6-uvKRxVYGApq47pGjh&s=10" alt="Textura de café sobre la piel" class="relative rounded-[2rem] w-full hover-zoom shadow-xl shadow-cafe-900/5">
+                </div>
+                <!-- Texto Derecha -->
+                <div class="order-1 lg:order-2">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-cafe-900 mb-6 leading-snug">Renueva tu piel, revelando su brillo natural.</h2>
+                    <p class="text-lg text-cafe-700/80 mb-6 leading-relaxed font-light">
+                        Los diminutos granos de café actúan como un exfoliante mecánico perfecto que elimina las células muertas suavemente, estimulando la circulación y reduciendo la apariencia de celulitis.
+                    </p>
+                    <p class="text-lg text-cafe-700/80 mb-8 leading-relaxed font-light">
+                        Enriquecida con manteca de karité y aceites esenciales naturales, nuestra barra no solo limpia, sino que deja tu piel profundamente hidratada y con un aroma a café recién tostado que energiza tus mañanas.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Zig-Zag 2: Sostenibilidad -->
+    <section class="py-24 bg-beige-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-16 items-center">
+                <!-- Texto Izquierda -->
+                <div>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-cafe-900 mb-6 leading-snug">Belleza que respeta y cuida nuestro planeta.</h2>
+                    <p class="text-lg text-cafe-700/80 mb-8 leading-relaxed font-light">
+                        Creemos en la economía circular. Cada una de nuestras barras rescata posos de café de alta calidad de cafeterías locales, dándoles una segunda vida llena de nutrientes.
+                    </p>
+                    <div class="border-l-4 border-cafe-300 pl-6 my-8 py-2">
+                        <p class="text-xl font-serif italic text-cafe-700">"Al elegir el formato sólido, eliminas de raíz los envases de plástico de un solo uso, creando una rutina verdaderamente sostenible."</p>
+                    </div>
+                </div>
+                <!-- Imagen Derecha -->
+                <div class="mt-12 lg:mt-0 relative">
+                    <img src="https://cdn0.uncomo.com/es/posts/9/4/7/como_hacer_jabon_exfoliante_de_cafe_44749_600.jpg" alt="Naturaleza y Café" class="relative rounded-[2rem] w-full hover-zoom shadow-xl shadow-cafe-900/5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Pilares / Ingredientes -->
+    <section class="py-24 bg-cafe-900 text-beige-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-16">Lo que nos hace diferentes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <!-- Pilar 1 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-cafe-700/50 rounded-full flex items-center justify-center mb-6 border border-cafe-500/30">
+                        <!-- Icono Hoja (Natural) -->
+                        <svg class="w-10 h-10 text-cafe-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16c1.5-1.5 3-1.5 4 0 1.5 1.5 3 1.5 4 0 1.5-1.5 3-1.5 4 0 1.5 1.5 3 1.5 4 0v-4c0-3.314-2.686-6-6-6-1.5 0-3 .5-4 1.5C8.5 6.5 7 6 5.5 6A5.5 5.5 0 000 11.5V16c1.333 0 2.667-.5 4-1.5z"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-cafe-100">100% Natural</h3>
+                    <p class="text-cafe-200/80 font-light leading-relaxed">Libre de parabenos, sulfatos y químicos abrasivos. Solo ingredientes provenientes de la tierra que nutren tu cuerpo.</p>
+                </div>
+                
+                <!-- Pilar 2 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-cafe-700/50 rounded-full flex items-center justify-center mb-6 border border-cafe-500/30">
+                        <!-- Icono Reciclaje / Zero Waste -->
+                        <svg class="w-10 h-10 text-cafe-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-cafe-100">Zero Waste</h3>
+                    <p class="text-cafe-200/80 font-light leading-relaxed">Desde la recolección de los residuos de café hasta nuestro empaque de papel compostable. Nada sobra, todo se transforma.</p>
+                </div>
+
+                <!-- Pilar 3 -->
+                <div class="flex flex-col items-center">
+                    <div class="w-20 h-20 bg-cafe-700/50 rounded-full flex items-center justify-center mb-6 border border-cafe-500/30">
+                        <!-- Icono Conejo / Cruelty Free -->
+                        <svg class="w-10 h-10 text-cafe-200" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5"></path></svg>
+                    </div>
+                    <h3 class="text-2xl font-serif font-bold mb-4 text-cafe-100">Cruelty Free</h3>
+                    <p class="text-cafe-200/80 font-light leading-relaxed">Amamos a los animales tanto como a la naturaleza. Nuestros productos nunca han sido, ni serán, probados en animales.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-cafe-100 py-16 border-t border-cafe-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center text-center">
+            <div class="text-3xl font-serif font-bold text-cafe-900 mb-6">YOLIA.</div>
+            <p class="text-cafe-700/70 max-w-md mx-auto mb-8 font-light">
+                Revolucionando el cuidado personal a través de ingredientes éticos, sostenibles y poderosamente naturales.
+            </p>
+            <div class="text-cafe-500 text-sm font-medium tracking-wide">
+                &copy; 2026 YOLIA Todos los derechos reservados.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
